@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             x:Class="sombras_JAGS.sombra">
+
+    <Grid>
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="Center"
+                     Spacing="30">
+                       
+            <sh:Shadows CornerRadius="50" Shades="{sh:SingleShade Offset='0,10',
+                Opacity=0.7,
+                Color=#1588C6}">
+                <ImageButton WidthRequest="100"
+                             HeightRequest="100"
+                             VerticalOptions="Center"
+                             BackgroundColor="#0066ff"
+                             CornerRadius="50"
+                             Source="https://ibb.co/BLb4BHm"
+                             Padding="13"/>
+                
+            </sh:Shadows>
+            <sh:Shadows CornerRadius="15" Shades="{sh:SingleShade Offset='0,10',
+    Opacity=0.7,
+    Color=#ffff66}">
+                <Frame WidthRequest="60"
+                       HeightRequest="60"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       Background="#FFF800"
+                       CornerRadius="15">
+                    <Image Source="https://ibb.co/mSdkqDp"/>
+
+                </Frame>
+
+            </sh:Shadows>
+
+            <sh:Shadows CornerRadius="15"
+                        Shades="{sh:SingleShade Offset='0.8',
+                Opacity=0.7,Color=#FF2D36}">
+
+                <BoxView WidthRequest="60"
+                         HeightRequest="60"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         BackgroundColor="#FF2D36"
+                         CornerRadius="15"/>
+            </sh:Shadows>
+
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>
